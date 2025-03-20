@@ -32,7 +32,7 @@ def print_report(book_path, num_words, chars_dict):
     # sort in descending order by char count
     chars_list = sorted(chars_dict.items(), key=lambda char: char[1], reverse=True)
     print(f"--- Begin report of {book_path} ---")
-    print(f"There are {num_words} words in the book.")
+    print(f"There are {num_words} words found in the document.")
     print("\n")
     for char in chars_list:
         if char[0].isalpha():
