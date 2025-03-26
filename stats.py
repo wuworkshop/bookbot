@@ -12,3 +12,9 @@ def get_chars_dict(text):
         else:
             chars_dict[char] = 1
     return chars_dict
+
+
+def sort_dict(dict):
+    # Convert dict to a list of tuples and
+    # sort in descending order by char count
+    return sorted(dict.items(), key=lambda char: char[1], reverse=True)
